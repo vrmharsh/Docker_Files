@@ -63,6 +63,11 @@
 
   CMD ["node","index.js"]
 
+  # can only append by ENTRYPOINT, it can be overridden by "docker run --entrypoint bash image" but then node application will not start since node is replaced.
+  # ENTRYPOINT ["node"]   
+
+  # can only over-ride with CMD
+  # CMD ["index.js"]
 
 
 
