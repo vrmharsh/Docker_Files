@@ -69,7 +69,9 @@
   # can only over-ride with CMD
   # CMD ["index.js"]
 
-
+  # IMP use-case can be:
+  #  ENTRYPOINT ["node"]  because node or any other package is need to start the node based application so better to not over-ride it.
+  #  CMD ["index.js"]  because file  can be changed or even for testing, we can refer to some other file which can be done via CMD.
 
 # docker compose file:
 services:
